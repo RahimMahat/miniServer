@@ -33,10 +33,10 @@ for form in forms_list:
 	for inpt in inputs_list:
 		inpt_name = inpt.get("name")
 		# print(inpt_name)
-		input_type = inpt.get("type")
+		inpt_type = inpt.get("type")
 
 		inpt_value = inpt.get("value")
-		if input_type == "text":
+		if inpt_type == "text":
 			inpt_value = "test"
 
 		post_data[inpt_name] = inpt_value
